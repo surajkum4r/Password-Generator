@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>Random Password Generator</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="container text-center">
+	<h1>Generate Password</h1>
+	<h3>Password Generation is no more stressful. You just need to seclect below flavors to generate password</h3>
+</div>
+<div class="container text-sm-left">
+	<h5>Select List of Flavours</h5>
+	<form action="{% url 'check' %}">
+		 <div class="row">
+		 	<div class="col">Length : </div>
+		 	<div class="col">
+			<select name="length">
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8" selected="selected">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+			</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">Lower Case: </div>
+			<div class="col">
+			<input type="checkbox" name="uppercase">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">Special Character:</div>
+			<div class="col">
+			<input type="checkbox" name="specialChar">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">Numeric:</div>
+			<div class="col">
+			<input type="checkbox" name="numeric">
+			</div>
+		</div>
+		<input type="submit" name="submit" class="btn btn-primary">
+
+	</form>
+</div>
+</body>
+
+
+</html>
