@@ -7,4 +7,4 @@ python manage.py runserver
 Access http://127.0.0.1:8080
 Select flavour and generate 
 
-Note: This is buggy. Will work to resolve this later
+Note: This may be buggy. 
